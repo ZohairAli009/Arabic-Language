@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReadWordsCell" customModule="Arabic_Language" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="600"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="600"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYd-qx-ttf">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="600"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1up-Le-7Gm">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CAREFULLY READ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afp-wE-yhB">
+                                        <rect key="frame" x="101" y="26" width="120" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Color-4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="txN-fT-Yt3"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UkD-lt-eDi">
+                                <rect key="frame" x="0.0" y="70.666666666666686" width="340" height="400"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Mdd-Ov-CEg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="600" id="0yX-q4-bSh"/>
+                            <constraint firstAttribute="width" constant="340" id="JVa-xH-NWo"/>
+                            <constraint firstAttribute="trailing" secondItem="1up-Le-7Gm" secondAttribute="trailing" id="RFY-fR-Wcm"/>
+                            <constraint firstAttribute="trailing" secondItem="UkD-lt-eDi" secondAttribute="trailing" id="UlL-Ja-QnF"/>
+                            <constraint firstItem="1up-Le-7Gm" firstAttribute="top" secondItem="QYd-qx-ttf" secondAttribute="top" id="aNS-6y-dfa"/>
+                            <constraint firstItem="1up-Le-7Gm" firstAttribute="leading" secondItem="QYd-qx-ttf" secondAttribute="leading" id="deI-0E-oDY"/>
+                            <constraint firstItem="UkD-lt-eDi" firstAttribute="top" secondItem="1up-Le-7Gm" secondAttribute="bottom" constant="0.5" id="dpr-bO-CKE"/>
+                            <constraint firstItem="UkD-lt-eDi" firstAttribute="leading" secondItem="QYd-qx-ttf" secondAttribute="leading" id="v1D-fv-vG6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="QYd-qx-ttf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Ai-wc-Mjh"/>
+                <constraint firstAttribute="trailing" secondItem="QYd-qx-ttf" secondAttribute="trailing" id="9sT-K9-zia"/>
+                <constraint firstAttribute="bottom" secondItem="QYd-qx-ttf" secondAttribute="bottom" id="eyK-Mr-Gmj"/>
+                <constraint firstItem="QYd-qx-ttf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wyu-32-dXE"/>
+            </constraints>
+            <connections>
+                <outlet property="wordsStackView" destination="UkD-lt-eDi" id="rA0-F1-715"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Color-4">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

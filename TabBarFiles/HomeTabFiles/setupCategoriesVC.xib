@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="setupCategoriesVC" customModule="Arabic_Language" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="C7g-Z2-diD" id="LJ2-lp-qKE"/>
+                <outlet property="categoryTableView" destination="YhZ-tq-3YL" id="pnk-1O-ehB"/>
+                <outlet property="titleLabel" destination="Mrw-ZP-b3f" id="ca2-Z9-Yaa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YhZ-tq-3YL">
+                    <rect key="frame" x="20" y="179" width="353" height="599"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the topics that you want to study" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-z3-9IC">
+                    <rect key="frame" x="30" y="139.66666666666666" width="333" height="19.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7g-Z2-diD">
+                    <rect key="frame" x="10" y="79" width="44" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="akQ-HU-3AG"/>
+                        <constraint firstAttribute="width" constant="44" id="wbv-qL-GZD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="multiply" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color systemColor="labelColor"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="cancelBtnTapped:" destination="-1" eventType="touchUpInside" id="qvJ-jH-J21"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-ZP-b3f">
+                    <rect key="frame" x="84" y="86" width="224" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YhZ-tq-3YL" secondAttribute="trailing" constant="20" id="3NZ-92-Ak6"/>
+                <constraint firstItem="YhZ-tq-3YL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4dd-GP-5Dw"/>
+                <constraint firstItem="YhZ-tq-3YL" firstAttribute="top" secondItem="ehL-z3-9IC" secondAttribute="bottom" constant="20" id="7Sf-Dl-Pcp"/>
+                <constraint firstItem="Mrw-ZP-b3f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="95P-7Q-Iqp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ehL-z3-9IC" secondAttribute="trailing" constant="30" id="P22-vj-TOi"/>
+                <constraint firstItem="C7g-Z2-diD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Ram-UC-Cf9"/>
+                <constraint firstItem="YhZ-tq-3YL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="b5m-mB-4ld"/>
+                <constraint firstItem="C7g-Z2-diD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="buz-HH-88p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mrw-ZP-b3f" secondAttribute="trailing" constant="85" id="hep-V5-9Nd"/>
+                <constraint firstItem="ehL-z3-9IC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ku4-iq-SLf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YhZ-tq-3YL" secondAttribute="bottom" constant="40" id="lOi-o6-06x"/>
+                <constraint firstItem="Mrw-ZP-b3f" firstAttribute="leading" secondItem="C7g-Z2-diD" secondAttribute="trailing" constant="30" id="zUa-Zz-mOo"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CVCategoryCell" customModule="Arabic_Language" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7Y-gM-0VO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the topics that you want to study" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-wy-Dgj">
+                                <rect key="frame" x="38" y="90" width="317" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Z6V-yF-AQP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-hD-VLu" customClass="CategoryTableView" customModule="Arabic_Language" customModuleProvider="target">
+                                <rect key="frame" x="8" y="173" width="377" height="499"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9BT-wy-Dgj" secondAttribute="trailing" constant="38" id="7ys-fE-5X8"/>
+                            <constraint firstItem="9BT-wy-Dgj" firstAttribute="leading" secondItem="v7Y-gM-0VO" secondAttribute="leading" constant="38" id="Br6-4K-yon"/>
+                            <constraint firstItem="9BT-wy-Dgj" firstAttribute="top" secondItem="v7Y-gM-0VO" secondAttribute="top" constant="90" id="DvK-Y4-KXZ"/>
+                            <constraint firstAttribute="width" constant="393" id="KyQ-a3-O5Y"/>
+                            <constraint firstAttribute="bottom" secondItem="ycZ-hD-VLu" secondAttribute="bottom" constant="180" id="Pu1-Dv-hAT"/>
+                            <constraint firstItem="ycZ-hD-VLu" firstAttribute="top" secondItem="9BT-wy-Dgj" secondAttribute="bottom" constant="23" id="Yxd-oL-1ya"/>
+                            <constraint firstAttribute="trailing" secondItem="ycZ-hD-VLu" secondAttribute="trailing" constant="8" id="gi6-KA-WAf"/>
+                            <constraint firstAttribute="height" constant="852" id="pFI-Wb-KAW"/>
+                            <constraint firstItem="ycZ-hD-VLu" firstAttribute="leading" secondItem="v7Y-gM-0VO" secondAttribute="leading" constant="8" id="rRU-P6-vVa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="v7Y-gM-0VO" secondAttribute="bottom" id="4JT-A8-LWQ"/>
+                <constraint firstItem="v7Y-gM-0VO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ab2-2a-XHW"/>
+                <constraint firstAttribute="trailing" secondItem="v7Y-gM-0VO" secondAttribute="trailing" id="N7S-J4-1dJ"/>
+                <constraint firstItem="v7Y-gM-0VO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dhG-vg-x2h"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="ycZ-hD-VLu" id="gji-aD-SFp"/>
+                <outlet property="viewWidth" destination="KyQ-a3-O5Y" id="daj-tV-PUE"/>
+            </connections>
+            <point key="canvasLocation" x="119.84732824427481" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+</document>

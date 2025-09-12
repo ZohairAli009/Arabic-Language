@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WordsTableViewCell" customModule="Arabic_Language" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-Tn-Jh2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyX-F3-urK">
+                                <rect key="frame" x="8" y="0.0" width="50" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="g4y-i2-E36"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="speaker.wave.2.fill" catalog="system" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color red="0.27161483739999998" green="0.67843137249999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="speakBtnTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4h2-1I-pz5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أنا بخير" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCF-dR-Yul">
+                                <rect key="frame" x="66" y="8" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am fine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkZ-5K-bg3">
+                                <rect key="frame" x="66" y="34" width="247" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nyX-F3-urK" firstAttribute="leading" secondItem="yXI-Tn-Jh2" secondAttribute="leading" constant="8" id="0Cw-ns-kTO"/>
+                            <constraint firstAttribute="height" constant="65" id="5fh-Ha-dfV"/>
+                            <constraint firstItem="KCF-dR-Yul" firstAttribute="top" secondItem="yXI-Tn-Jh2" secondAttribute="top" constant="8" id="8k9-xt-5T1"/>
+                            <constraint firstItem="zkZ-5K-bg3" firstAttribute="leading" secondItem="nyX-F3-urK" secondAttribute="trailing" constant="8" id="Dzg-pl-Z4U"/>
+                            <constraint firstItem="zkZ-5K-bg3" firstAttribute="top" secondItem="KCF-dR-Yul" secondAttribute="bottom" constant="5" id="Irm-V3-tE2"/>
+                            <constraint firstItem="nyX-F3-urK" firstAttribute="top" secondItem="yXI-Tn-Jh2" secondAttribute="top" id="PVP-gT-TQ8"/>
+                            <constraint firstAttribute="trailing" secondItem="zkZ-5K-bg3" secondAttribute="trailing" constant="80" id="Sex-1V-Cym"/>
+                            <constraint firstAttribute="bottom" secondItem="nyX-F3-urK" secondAttribute="bottom" id="TXJ-zr-BLq"/>
+                            <constraint firstItem="KCF-dR-Yul" firstAttribute="leading" secondItem="nyX-F3-urK" secondAttribute="trailing" constant="8" id="eRk-0B-aIK"/>
+                            <constraint firstAttribute="width" constant="393" id="fIJ-aI-JSs"/>
+                            <constraint firstAttribute="trailing" secondItem="KCF-dR-Yul" secondAttribute="trailing" constant="80" id="pgP-mF-58k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yXI-Tn-Jh2" secondAttribute="bottom" id="IvY-fw-pq3"/>
+                    <constraint firstAttribute="trailing" secondItem="yXI-Tn-Jh2" secondAttribute="trailing" id="Pxs-TD-A1w"/>
+                    <constraint firstItem="yXI-Tn-Jh2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ghi-Qg-FHQ"/>
+                    <constraint firstItem="yXI-Tn-Jh2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="v75-A1-yMM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arabicLabel" destination="KCF-dR-Yul" id="GBb-NZ-7wR"/>
+                <outlet property="englishLabel" destination="zkZ-5K-bg3" id="7aq-yx-bKr"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="speaker.wave.2.fill" catalog="system" width="128" height="88"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
